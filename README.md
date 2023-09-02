@@ -1,5 +1,5 @@
 # Calcuator-App
-A simple calculator web app. 
+A simple calculator web app, built with HTML, CSS & JS.
 
 Features
 
