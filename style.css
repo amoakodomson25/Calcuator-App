@@ -1,0 +1,138 @@
+@font-face {
+  font-family: main;
+  src: url(font.otf);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+  font-family: main;
+}
+.header {
+  width: 100%;
+  height: 50px;
+  background-color: #010001;
+  color: #fff;
+  padding: 10px 40px;
+  font-size: 25px;
+  position: fixed;
+  top: 0;
+  z-index: 999999;
+}
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #010001;
+  padding: 20px 50px;
+  color: #fffbfc;
+  display: block;
+}
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+.flex-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.calcbody {
+  width: 300px;
+  height: 395px;
+  background-color: #000;
+  border: 2px solid #010001;
+  border-radius: 4px 4px 24px 24px;
+  padding: 15px;
+}
+.ans-screen {
+  width: 100%;
+  height: 70px;
+  background-color: #ffffffd4;
+  padding: 15px 10px;
+  border-radius: 8px 8px 12px 12px;
+  border: 2px solid #010001;
+  color: #010001;
+}
+.cur-calc {
+  font-size: 15px;
+  text-align: left;
+}
+.ans {
+  font-size: 15px;
+  text-align: right;
+  margin-right: 5px;
+}
+.clearbtn {
+  width: 100%;
+  height: 40px;
+  padding: 0px 5px;
+  margin: 15px 0;
+}
+.clearbtn button {
+  float: right;
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  padding: 1px;
+  background-color: #ffffffd4;
+  color: #010001;
+  border: 2px solid #010001;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.keypad {
+  width: 100%;
+  height: 200px;
+}
+.keypad .row {
+  background-color: #01000144;
+  margin: 5.5px 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0px;
+}
+.keypad .row button {
+  margin: 0 1.5px;
+  padding: 1px;
+  width: 55px;
+  height: 50px;
+  float: left;
+  background-color: #ffffffd4;
+  color: #010001;
+  border: 2px solid #010001;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: 0.2s;
+  font-size: 25px;
+}
+.clearbtn button:hover,
+.keypad .row button:hover {
+  background-color: #010001cc;
+  color: #fffbfc;
+  border: 2px solid #010001;
+}
+.blink {
+  animation: animBlink 1s infinite;
+  float: right;
+}
+@keyframes animBlink {
+  0% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 50%;
+  }
+  0% {
+    opacity: 100%;
+  }
+}
