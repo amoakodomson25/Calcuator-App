@@ -1,5 +1,6 @@
 # Calcuator-App
 A simple calculator web app, built with HTML, CSS & JS.
+
 Demo: https://wad-calculator-app.netlify.app/
 
 Features
